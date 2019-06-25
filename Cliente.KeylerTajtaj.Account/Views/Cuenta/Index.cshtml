@@ -1,0 +1,86 @@
+﻿@model Modelos.Cuentas.Cuentas
+
+@{
+    /**/
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    /**/
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" />
+    /**/
+
+    ViewBag.Title = "Index";
+}
+@*<table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Numero Cuenta</th>
+                <th scope="col">Nombre Cuenta</th>
+                <th scope="col">Nombre Cliente</th>
+                <th scope="col">Tipo Cuenta</th>
+                <th scope="col">Tipo Moneda</th>
+                <th scope="col">Cuenta</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ListaCuentas)
+            {
+                <tr style="font-family: 'Quicksand', sans-serif">
+                    <td>
+                        @(item.numeroCuenta)
+                    </td>
+                    <td>
+                        @(item.nombreCuenta)
+                    </td>
+                    <td>
+                        @(item.cliente.nombreCliente)
+                    </td>
+                    <td>
+                        @(item.tipoCuenta.tipoCuenta)
+                    </td>
+                    <td>
+                        @(item.tipoMoneda)
+                    </td>
+                    <td>
+                        @(item.esCuentaTercero)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>*@
+
+@*@foreach (var item in Model.ListaCuentas)
+{
+
+        <div class="card-columns">
+            <div class="card" style="width: 24rem;">
+                <div class="card-body">
+                    <div class="card-title text-center p-3">
+                        <h5><b>Numero de Cuenta: @item.numeroCuenta</b></h5>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted" style="font-size:14px"><b>Nombre Cuenta:</b> @item.nombreCuenta</h6>
+                    <h6 class="card-subtitle mb-2 text-muted" style="font-size:14px"><b>Cliente:</b> @item.cliente.nombreCliente</h6>
+                    <a href="#" class="card-link">Editar</a>
+                    <a href="#" class="card-link">Eliminar</a>
+                </div>
+            </div>
+        </div>
+    
+}*@
+        <div class="row">
+            @foreach (var item in Model.ListaCuentas)
+            {
+            <div class="column" style="margin-left:auto">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title text-center p-3">
+                            <h5><b>Numero de Cuenta: @item.numeroCuenta</b></h5>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size:14px"><b>Nombre Cuenta:</b> @item.nombreCuenta</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size:14px"><b>Cliente:</b> @item.cliente.nombreCliente</h6>
+                        <a href="#" class="card-link">Editar</a>
+                        <a href="#" class="card-link">Eliminar</a>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+

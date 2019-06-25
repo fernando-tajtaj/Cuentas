@@ -1,0 +1,72 @@
+﻿import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+    padding-top: 0px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 50px;
+}
+
+.body-index {
+    background-image: url(https://images.pexels.com/photos/2419032/pexels-photo-2419032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    color: black;
+    font-family: 'Fredoka One', cursive;
+}
+
+.navbar-left {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    width: 25rem;
+    margin-top: 0px;
+}
+
+.login {
+    font-family: 'Fredoka One', cursive;
+}
+
+.card-login {
+    margin-top: 0px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background-color: transparent;
+    width: 20rem;
+    align-content: center;
+    text-align: center;
+    position: center;
+}
+
+.page-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #1C1D1F;
+    color: white;
+}

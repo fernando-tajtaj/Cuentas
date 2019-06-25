@@ -1,0 +1,4 @@
+C:\Users\Computadora 1\source\Proyectos\Cuentas\Cliente.Cuentas\obj\Debug\Cliente.KeylerTajtaj.Accounts.csprojAssemblyReference.cache
+C:\Users\Computadora 1\source\Proyectos\Cuentas\Cliente.Cuentas\obj\Debug\Cliente.KeylerTajtaj.Accounts.csproj.CoreCompileInputs.cache
+C:\Users\Computadora 1\source\Proyectos\Cuentas\Cliente.Cuentas\obj\Debug\Cliente.Cuentas.dll
+C:\Users\Computadora 1\source\Proyectos\Cuentas\Cliente.Cuentas\obj\Debug\Cliente.Cuentas.pdb

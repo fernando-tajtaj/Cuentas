@@ -1,0 +1,6 @@
+C:\Keyler\Cuentas\Debug\Modelos.Cuentas.dll
+C:\Keyler\Cuentas\Debug\Modelos.Cuentas.pdb
+C:\Users\Computadora 1\source\Proyectos\Cuentas\Modelos.Cuentas\obj\Debug\Modelos.Cuentas.csprojAssemblyReference.cache
+C:\Users\Computadora 1\source\Proyectos\Cuentas\Modelos.Cuentas\obj\Debug\Modelos.Cuentas.csproj.CoreCompileInputs.cache
+C:\Users\Computadora 1\source\Proyectos\Cuentas\Modelos.Cuentas\obj\Debug\Modelos.Cuentas.dll
+C:\Users\Computadora 1\source\Proyectos\Cuentas\Modelos.Cuentas\obj\Debug\Modelos.Cuentas.pdb

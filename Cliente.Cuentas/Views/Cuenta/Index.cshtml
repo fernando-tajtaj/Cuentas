@@ -1,0 +1,44 @@
+﻿@model List<Modelos.Cuentas.Cuenta>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Numero Cuenta</th>
+            <th scope="col">Nombre Cuenta</th>
+            <th scope="col">Nombre Cliente</th>
+            <th scope="col">Tipo Cuenta</th>
+            <th scope="col">Tipo Moneda</th>
+            <th scope="col">Cuenta</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.numeroCuenta)
+            </td>
+            <td>    
+                @Html.DisplayFor(modelItem => item.nombreCuenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cliente.nombreCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipoCuenta.tipoCuenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipoMoneda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.esCuentaTercero)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+

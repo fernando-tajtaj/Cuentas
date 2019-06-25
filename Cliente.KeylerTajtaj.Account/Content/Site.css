@@ -1,0 +1,42 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+    padding-top: 0px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 50px;
+}
+
+.body-index {
+    background-image: url(https://images.pexels.com/photos/2419032/pexels-photo-2419032.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    color: black;
+    font-family: 'Fredoka One', cursive;
+}
+
+.td, th {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card-body {
+    font-family: 'Quicksand', sans-serif;
+}

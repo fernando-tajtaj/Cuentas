@@ -1,0 +1,57 @@
+﻿@model Modelos.Cuentas.Clientes
+@{
+    ViewBag.Title = "Cuenta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("CrearCuenta", "Cuenta", FormMethod.Post))
+{
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputNoCuenta">Numero Cuenta</label>
+                <input type="text" class="form-control" id="inputNoCuenta" name="numeroCuenta" placeholder="Numero de Cuenta">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputNomCuenta">Nombre de Cuenta</label>
+                <input type="text" class="form-control" id="inputNomCuenta" name="nombreCuenta" placeholder="Nombre de Cuenta">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Cliente</label>
+                <select id="inputState" class="form-control" name="idCliente">
+                    <option selected>Cliente...</option>
+                    @foreach (Modelos.Cuentas.Cliente item in Model.ListaClientes)
+                    {
+                        <option value="@(item.idCliente)">@(item.nombreCliente)</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputZip">Tipo Moneda</label>
+                <select id="inputState" class="form-control" name="tipoMoneda">
+                    <option selected>Tipo Moneda...</option>
+                    <option value="0">Quetzales</option>
+                    <option value="1">Dolares</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCity">Tipo Cuenta</label>
+                <select id="inputState" class="form-control" name="idTipoCuenta">
+                    <option selected>Tipo Cuenta...</option>
+                    <option value="0">Ahorro</option>
+                    <option value="1">Monetaria</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputZip">Es Cuenta A</label>
+                <select id="inputState" class="form-control" name="esCuentaTercero">
+                    <option selected>Es Cuenta A...</option>
+                    <option value="0">Propia</option>
+                    <option value="1">A Terceros</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+    </form>
+}
